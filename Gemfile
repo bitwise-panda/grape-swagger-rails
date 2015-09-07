@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gemspec
 
-case version = ENV['GRAPE_SWAGGER_VERSION'] || '~> 0.9.0'
+case version = ENV['GRAPE_SWAGGER_VERSION'] || '~> 0.10.2'
 when 'HEAD'
   gem 'grape-swagger', github: 'tim-vandecasteele/grape-swagger'
 when '0.8.0'
