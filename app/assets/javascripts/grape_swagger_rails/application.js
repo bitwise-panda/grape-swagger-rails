@@ -1,5 +1,5 @@
 //= require ./backbone-min
-//= require ./bootstrap-min
+//= require ./bootstrap.min
 //= require ./handlebars-2.0.0
 //= require ./highlight.7.3.pack
 //= require ./jquery-1.8.0.min
