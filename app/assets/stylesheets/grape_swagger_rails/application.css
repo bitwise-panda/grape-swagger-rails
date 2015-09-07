@@ -1,10 +1,6 @@
 /*
 *= require ./api-explorer
 *= require ./index
-*= require ./print
-*= require ./reset
-*= require ./screen
 *= require ./standalone
-*= require ./typography
 *= require_self
 */

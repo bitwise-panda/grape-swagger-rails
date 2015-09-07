@@ -59,11 +59,7 @@ namespace :swagger_ui do
         CSS_FILES = [
           'api-explorer.css',
           'index.css',
-          'print.css',
-          'reset.css',
-          'screen.css',
           'standalone.css',
-          'typography.css'
         ]
         css_files = Dir["#{root}/app/assets/stylesheets/grape_swagger_rails/*.css"].map { |f|
           f.split('/').last
