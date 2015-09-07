@@ -16,55 +16,7 @@
                 jQuery.browser.msie = true;
                 jQuery.browser.version = RegExp.$1;
             }
-        })();
-
-        $(function () {
-            var options = $("html").data('swagger-options');
-
-            window.swaggerUi = new SwaggerUi({
-              url: options.app_url + options.url,
-              dom_id: "swagger-ui-container",
-              supportHeaderParams: true,
-              supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
-              onComplete: function(swaggerApi, swaggerUi){
-                if('console' in window) {
-                  console.log("Loaded SwaggerUI")
-                  console.log(swaggerApi);
-                  console.log(swaggerUi);
-                }
-                $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
-              },
-              onFailure: function(data) {
-                if('console' in window) {
-                  console.log("Unable to Load SwaggerUI");
-                  console.log(data);
-                }
-              },
-              docExpansion: "none",
-              apisSorter: "alpha"
-            });
-
-        $('#input_apiKey').change(function() {
-          var key = $('#input_apiKey')[0].value;
-
-          if(key && key.trim() != "") {
-            if (options.api_auth == 'basic') {
-              key = "Basic " + Base64.encode(key);
-            } else if (options.api_auth == 'bearer') {
-              key = "Bearer " + key
-            }
-            window.swaggerUi.api.clientAuthorizations.add("key", new SwaggerClient.ApiKeyAuthorization(options.api_key_name, key, options.api_key_type));
-          } else {
-            window.swaggerUi.api.clientAuthorizations.add("key", null);
-          }
-        });
-
-        window.swaggerUi.load();
-
-        <% GrapeSwaggerRails.options.headers.each_with_index do |(key, value), index| %>
-          <%=raw "window.swaggerUi.api.clientAuthorizations.add('header_#{index}', new SwaggerClient.ApiKeyAuthorization('#{CGI.escapeHTML(key)}', '#{CGI.escapeHTML(value)}', 'header'));" %>
-        <% end %>
-        });        
+        })(); 
     </script>
 
     <script type="text/javascript">
