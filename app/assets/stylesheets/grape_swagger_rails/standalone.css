@@ -42,11 +42,11 @@ header.site-header nav .navbar-brand {
     width: 120px;
 }
 header.site-header nav .navbar-brand a {
-    background: url("../images/logo.png") center left no-repeat;
-    width: 130px;
-    height: 40px;
+    background: url("../images/logo-small.png") center left no-repeat;
+    width: 160px;
+    height: 80px;
     display: block;
-    margin-top: 5px;
+    margin-top: -20px;
     background-size: 48%;
 }
 header.site-header nav .navbar-brand img {
