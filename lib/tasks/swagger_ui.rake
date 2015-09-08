@@ -21,18 +21,18 @@ namespace :swagger_ui do
         FileUtils.cp Dir.glob("#{root}/lib/javascripts/*.js"), "#{root}/app/assets/javascripts/grape_swagger_rails"
         # Generate application.js
         JAVASCRIPT_FILES = [
-          'backbone-min.js',
-          'bootstrap.min.js',
-          'handlebars-2.0.0.js',
-          'highlight.7.3.pack.js',
           'jquery-1.8.0.min.js',
           'jquery.ba-bbq.min.js',
           'jquery.slideto.min.js',
           'jquery.wiggle.min.js',
+          'handlebars-2.0.0.js',
+          'underscore-min.js',
+          'backbone-min.js',
+          'swagger-ui.min.js',
+          'highlight.7.3.pack.js',
           'marked.js',
           'swagger-oauth.js',
-          'swagger-ui.min.js',
-          'underscore-min.js',
+          'bootstrap.min.js',
           'base64.js'
         ]
         javascript_files = Dir["#{root}/app/assets/javascripts/grape_swagger_rails/*.js"].map { |f|
