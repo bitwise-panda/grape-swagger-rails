@@ -42,11 +42,11 @@ header.site-header nav .navbar-brand {
     width: 120px;
 }
 header.site-header nav .navbar-brand a {
-    background: url("../images/logo-small.png") center left no-repeat;
-    width: 160px;
-    height: 80px;
+    background: url("../images/senodio.png") center left no-repeat;
+    width: 130px;
+    height: 40px;
     display: block;
-    margin-top: -20px;
+    margin-top: 5px;
     background-size: 48%;
 }
 header.site-header nav .navbar-brand img {
