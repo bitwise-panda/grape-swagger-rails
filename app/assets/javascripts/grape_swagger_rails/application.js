@@ -1,13 +1,12 @@
 //= require ./jquery-1.8.0.min
-//= require ./jquery.ba-bbq.min
 //= require ./jquery.slideto.min
 //= require ./jquery.wiggle.min
+//= require ./jquery.ba-bbq.min
 //= require ./handlebars-2.0.0
 //= require ./underscore-min
 //= require ./backbone-min
-//= require ./swagger-ui.min
+//= require ./swagger-ui
 //= require ./highlight.7.3.pack
 //= require ./marked
 //= require ./swagger-oauth
 //= require ./bootstrap.min
-//= require ./base64
