@@ -15459,9 +15459,9 @@ header.site-header.site-header nav .navbar-brand a {
     display: block;
     position: absolute;
     top: 50%;
-    height: 80px;
+    height: 100px;
     margin-top: -50px; 
-    background-size: 48%;
+    background-size: 42%;
 }
 header.site-header.site-header nav .navbar-brand img {
     position: relative;
