@@ -15457,7 +15457,10 @@ header.site-header.site-header nav .navbar-brand a {
     background: url("../images/logo-small.png") center left no-repeat;
     /*background-size: 76%;*/
     display: block;
-    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    height: 80px;
+    margin-top: -50px; 
     background-size: 48%;
 }
 header.site-header.site-header nav .navbar-brand img {
