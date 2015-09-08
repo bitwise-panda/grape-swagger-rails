@@ -28,7 +28,7 @@ namespace :swagger_ui do
           'handlebars-2.0.0.js',
           'underscore-min.js',
           'backbone-min.js',
-          'swagger-ui.js',
+          'swagger-ui.min.js',
           'highlight.7.3.pack.js',
           'marked.js',
           'swagger-oauth.js',

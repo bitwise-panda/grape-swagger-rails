@@ -5,7 +5,7 @@
 //= require ./handlebars-2.0.0
 //= require ./underscore-min
 //= require ./backbone-min
-//= require ./swagger-ui
+//= require ./swagger-ui.min
 //= require ./highlight.7.3.pack
 //= require ./marked
 //= require ./swagger-oauth
